@@ -1,0 +1,85 @@
+#header{
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-bottom: 1px solid #F2F2F2;
+}
+#header .left,#header .right{
+    width: 60%;
+    height: 100%;
+    /* background: red; */
+    float: left;
+    line-height: 90px;
+}
+#header .left img{
+    vertical-align: middle;
+}
+#header .left ul{
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin-top: 0;
+}
+#header .left ul li a{
+    font-size: 1.1rem;
+}
+#header .left ul li a.active{
+    display: block;
+    background: #31c27c;
+    color: #fff;
+    border-radius: 3px;
+}
+#header .left ul{
+    list-style:none;
+}
+#header .left ul li{
+    float: left;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+#header .right{
+    width: 40%;
+    /* background: purple; */
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+#header .right .search{
+    width: 48%;
+}
+#header .right .btn{
+    width: 52%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 50%;
+    line-height:45px;
+
+}
+#header .right .search input{
+    width: 100%;
+    height: 38px;
+    outline: none;
+    padding-left: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+#header .right .btn a{
+    height: 100%;
+}
+#header .right .btn a:nth-child(2){
+    background: #2caf6f;
+    color: #fff;
+    height: 100%;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 13px;
+}
+#header .right .btn a:nth-child(3){
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 0 5px;
+}
+

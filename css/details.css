@@ -1,0 +1,101 @@
+#section .nav{
+    display: flex;
+    width: 45%;
+    padding: 13px 0;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#section div.list{
+    width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#section div.list img{
+    width: 250px;
+    height: 250px;
+}
+#section div.list div.content{
+    width: 895px;
+    padding-top: 20px;
+}
+#section div.list div.content h1{
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+#section div.list div.content p{
+    margin-bottom: 10px;
+}
+#section .inline{
+    display: inline-block;
+    margin-right: 60px;
+}
+#section div.btn a{
+    float: left;
+    width: 122px;
+    height: 38px;
+    border: 1px solid #999;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 4px;
+}
+#section div.btn a.active{
+    background: #2caf6f;
+    color: #fff;
+}
+#section div.btn a.active i{
+    background-position: -81px 118px;
+}
+#section div.btn a.active:hover{
+    color: #fff !important;
+    background: #31c27c;
+}
+#section div.btn a i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/details/icon_sprite.png);
+    background-position: -60px 120px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+#section div.btn a:nth-child(2) i{
+    background-position: -60px 340px;
+}
+#section div.btn a:nth-child(3) i{
+    background-position: -140px 220px;
+}
+#section div.btn a:nth-child(4) i{
+    background-position: -82px 298px;
+}
+#section .lyric{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#section .lyric h3{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+#section .lyric p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#section .lyric .lyric-content{
+    width: 70%;
+}
+#section .lyric .hot-content{
+    width: 28%;
+}
+#section .lyric .hot-content div{
+    width: 30%;
+}
+#section .lyric .hot-content img{
+    max-width: 100%;
+}

@@ -1,0 +1,97 @@
+#footer{
+    background: #333;
+}
+#footer p,#footer a{
+    color: #999;
+}
+#footer a:hover{
+    color: #31c27c;
+}
+#footer .top{
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    height: 457px;
+    margin: 0 auto;
+}
+#footer .top .left,#footer .top .center,#footer .top .right{
+    width: 30%;
+}
+#footer .top p{
+    height: 148px;
+    padding: 80px 0 46px;
+}
+#footer .top .left ul,#footer .center ul,#footer .right ul.clearfix{
+    display: flex;
+    justify-content: space-between;
+}
+#footer .top ul.pic li{
+    width: 50px;
+    height: 50px;
+}
+#footer .top ul.pic li:hover{
+    cursor: pointer;
+}
+#footer .top .left ul.pic li:first-child{
+    background-image:url(../img/footer.png);
+    background-position: 0 0;
+}
+#footer .top .left ul.pic li:first-child:hover{
+    background-position: 0 47px;
+}
+#footer .top .left ul.pic li:nth-child(2){
+    background: url(../img/footer.png) -90px 0;
+}
+#footer .top .left ul.pic li:nth-child(2):hover{
+    background: url(../img/footer.png) -90px 47px;
+}
+#footer .top .left ul.pic li:nth-child(3){
+    background: url(../img/footer.png) -180px 0;
+}
+#footer .top .left ul.pic li:nth-child(3):hover{
+    background: url(../img/footer.png) -180px 47px;
+}
+#footer .top .left ul.pic li:last-child{
+    background: url(../img/footer.png) -270px 0;
+}
+#footer .top .left ul.pic li:last-child:hover{
+    background: url(../img/footer.png) -270px 47px;
+}
+/* #footer .top ul li{
+    float: left; */
+/* } */
+/* #footer .top ul.notfloat>li{
+    float: none;
+} */
+#footer .top .right ul.notfloat li{
+    margin-bottom: 16px;
+}
+#footer .top .center ul.pic li:first-child{
+    background: url(../img/footer.png) -360px 0;
+}
+#footer .top .center ul.pic li:first-child:hover{
+    background: url(../img/footer.png) -360px 47px;
+}
+#footer .top .center ul.pic li:nth-child(2){
+    background: url(../img/footer.png) -450px 0;
+}
+#footer .top .center ul.pic li:nth-child(2):hover{
+    background: url(../img/footer.png) -450px 47px;
+}
+#footer .top .center ul.pic li:last-child{
+    background: url(../img/footer.png) -560px 0;
+}
+#footer .top .center ul.pic li:last-child:hover{
+    background: url(../img/footer.png) -560px 47px;
+}
+#footer .center ul.pic+ul{
+    margin-top: 30px;
+}
+#footer .bottom p{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#footer .bottom{
+    padding-bottom: 20px;
+}
