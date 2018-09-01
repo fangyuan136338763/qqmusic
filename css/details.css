@@ -43,7 +43,7 @@
     border-radius: 4px;
 }
 #section div.btn a.active{
-    background: #2caf6f;
+    background: #31c27c;
     color: #fff;
 }
 #section div.btn a.active i{
@@ -51,7 +51,7 @@
 }
 #section div.btn a.active:hover{
     color: #fff !important;
-    background: #31c27c;
+    background: #2caf6f;
 }
 #section div.btn a i{
     display: inline-block;
@@ -73,7 +73,7 @@
 }
 #section .lyric{
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -87,6 +87,13 @@
     margin-bottom: 10px;
     font-size: 14px;
 }
+#section .lyric .lyric-content a{
+    color: #31c27c;
+    font-size: 14px;
+    display: block;
+    margin-top: -10px;
+    height: 30px;
+}
 #section .lyric .lyric-content{
     width: 70%;
 }
@@ -98,4 +105,117 @@
 }
 #section .lyric .hot-content img{
     max-width: 100%;
+}
+#section .comment{
+    width: 1200px;
+    margin: 0 auto;
+    padding-right: 28%;
+}
+#section .comment .area h2{
+    font-size: 25px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+#section .comment .area h2 span{
+    color: #999;
+    font-size: 13px;
+}
+#section .comment .area h2 + div{
+    border: 1px solid #ececec;
+    background: #f5f5f5;
+}
+#section .comment .area textarea{
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 13px;
+}
+#section .comment .area textarea+p{
+    text-align: right;
+    font-size: 13px;
+    padding: 0 10px 8px 0;
+}
+#section .comment .area textarea+p span{
+    color: #31c27c;
+    font-size: 13px;
+}
+#section .comment .area .send{
+    float: right;
+    padding: 15px 0 20px;
+}
+#section .comment .area .send i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/details/comment.png) 0 280px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#section .comment .area .send a{
+    display: inline-block;
+    width: 87px;
+    height: 27px;
+    text-align: center;
+    background: #31c27c;
+    line-height: 27px;
+    border-radius: 3px;
+    color: #fff;
+}
+#section .comment .area .send a:hover{
+    background: #2caf6f;
+}
+#section .comment .bestcomment{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px 0 15px;
+    border-bottom: 1px solid #f5f5f5;
+}
+#section .best h4{
+    font-weight: normal;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f5f5f5;
+}
+#section .comment .bestcomment img{
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+#section .comment .bestcomment img+div{
+    width: 93%;
+}
+#section .comment .bestcomment-item a{
+    color: #999;
+}
+#section .comment .bestcomment-item>p{
+    padding-bottom: 10px;
+}
+#section .float-right{
+    float: right;
+}
+#section .date{
+    color: #999;
+    font-size: 13px;
+}
+#section .zan,#section .send-msg{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/details/comment.png) 0 255px;
+    margin:0 10px;
+}
+#section .send-msg{
+    background-position: 0 129px;
+}
+#section .text{
+    font-size: 13px;
+}
+#section .comment .end{
+    text-align: center;
+    padding: 30px 0 30px;
+    font-size: 13px;
+    color: #999;
 }
