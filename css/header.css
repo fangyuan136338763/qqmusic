@@ -69,12 +69,15 @@
     height: 100%;
 }
 #header .right .btn a:nth-child(2){
-    background: #2caf6f;
+    background: #31c27c;
     color: #fff;
     height: 100%;
     border-radius: 3px;
     padding: 0 10px;
     font-size: 13px;
+}
+#header .right .btn a:nth-child(2):hover{
+    background: #2caf6f;
 }
 #header .right .btn a:nth-child(3){
     border: 1px solid #c9c9c9;
