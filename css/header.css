@@ -71,14 +71,15 @@
     position: absolute;
     background: #fff;
     border: 1px solid #c9c9c9;
-    line-height: 30px;
+    line-height: 2;
     top: 64px;
     /* text-align: center; */
+    padding: 0 15px;
+    display: none;
 }
-#header .position-absolute ol{
-    list-style: decimal;
+#header .position-absolute>ul{
+    list-style: square;
 }
-
 #header .right .btn a{
     height: 100%;
 }
