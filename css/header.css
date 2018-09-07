@@ -71,15 +71,39 @@
     position: absolute;
     background: #fff;
     border: 1px solid #c9c9c9;
-    line-height: 2;
+    line-height: 30px;
     top: 64px;
     /* text-align: center; */
+    /* display: none; */
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#header .position-absolute a{
+    display: block;
+    font-size: 13px;
     padding: 0 15px;
-    display: none;
+
 }
-#header .position-absolute>ul{
-    list-style: square;
+#header .position-absolute a:hover{
+    background: #31c27c;
+    color: #fff;
 }
+#header .position-absolute a span{
+    color: red;
+}
+#header .position-absolute a i{
+    font-style: normal;
+    font-size: 13px;
+    color: #999;
+    float: right;
+    line-height: 30px;
+    
+}
+header .position-absolute a:hover i{
+    color:  #fff;
+}
+
 #header .right .btn a{
     height: 100%;
 }
