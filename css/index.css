@@ -11,6 +11,9 @@
     background: linear-gradient(to bottom,#f6f6f6 80%,white);
     padding-bottom: 50px;
 }
+#banner{
+    position: relative;
+}
 #banner h1,.my-title{
     margin: 0 auto 40px;
     padding-top: 50px;
@@ -24,13 +27,6 @@
     display: flex;
     justify-content: space-around;
 }
-#banner ul.pic{
-    width: 1200px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    margin: 0 auto;
-}
 #banner ul.pic li{
     width: 224px;
 }
@@ -43,7 +39,73 @@
 }
 #banner ul.pic img {
     max-width: 100%;
+    transition: all 1s;
 }
+#banner .sibling-float{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 303px;
+    min-height: 283px;
+}
+#banner .sibling-float .sibling-float-item{
+    width: 3600px;
+    position: absolute;
+    /* transition: all 2s; */
+}
+#banner .sibling-float ul.pic{
+    width: 1200px;
+    float: left;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#banner .sibling-float ul.pic li{
+    position: relative;
+    top: 0;
+    transition: top 1s;
+}
+#banner .sibling-float ul.pic li:hover{
+    top: 20px;
+    box-shadow: 0 0 10px 5px black;
+}
+#banner .sibling-float ul.pic li a.img{
+    display: block;
+    width: 224px;
+    height: 224px;
+    overflow: hidden;
+}
+#banner .sibling-float ul.pic img:hover{
+    box-shadow: 0 0 10px 0 black;
+    transform: scale(1.5);
+}
+#banner div.left,#banner div.right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    width: 79px;
+    height: 108px;
+    background: #ccc;
+}
+#banner div.right i.right-icon,#banner div.left i.left-icon{
+    display: block;
+    background: url(../img/icon_sprite.png) 0px 220px; 
+    width: 22px;
+    height: 39px;
+    margin: 32px auto;
+
+}
+#banner div.left{
+    top: 50%;
+    left: 0;
+}
+#banner div.left i.left-icon{
+    background-position: -22px 220px;
+}
+
+
 /*banner style*/
 /*small_banner style*/
 #small_banner > h1 + div{
