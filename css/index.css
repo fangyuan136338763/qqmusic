@@ -87,6 +87,9 @@
     cursor: pointer;
     width: 79px;
     height: 108px;
+    background: rgba(0,0,0,.05);
+}
+#banner div.left:hover,#banner div.right:hover{
     background: #ccc;
 }
 #banner div.right i.right-icon,#banner div.left i.left-icon{
