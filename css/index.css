@@ -148,21 +148,15 @@
     /* padding: 10px 0; */
     margin: 10px 0;
     /* border-bottom: 1px solid #ccc; */
-    transition: all 2s;
+    /* transition: border 2s; */
 }
+
 #small_banner ul.banner-list>li:hover{
     border: 1px solid #ccc;
-    box-shadow: 1px 1px 5px 0px #ccc;
-    transform: scale(2) rotate(360deg);
+    box-shadow: 1px 1px 5px 1px #ccc;
     background: #fff;
 }
-@keyframes amt{
-    0%{
-        box-shadow: none;
-        transform: scale(1) rotate(0deg);
-        background: #fff;
-    }
-}
+
 #small_banner ul.banner-list div.img-details{
     width: 300px;
 }

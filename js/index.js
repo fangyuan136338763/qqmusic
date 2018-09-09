@@ -1,3 +1,4 @@
+// 轮播图
 var width = 0;
 var aNode = document.querySelector("#banner>ul>li>a[class=active]");
 var id = aNode.getAttribute("data-toggle");
@@ -92,3 +93,17 @@ ul.onclick = function(e){
         contentId.style.display = "block";
     }
 }
+// 轮播图
+// 新歌首发
+/* var banner_list = document.querySelector("#small_banner>ul.banner-list");
+console.log(banner_list);
+banner_list.onclick = function(e){
+    var div = e.target;
+    // e.preventDefault();
+    console.log(div);
+    if(div.nodeName == "DIV"){
+        var li = div.parentNode;
+        li.style.animation = "amt 2s";
+    }
+} */
+// 新歌首发
