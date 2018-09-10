@@ -178,18 +178,58 @@
 }
 /*small_banner style*/
 /*recommend style*/
+#recommend{
+    position:relative;
+    height: 420px;
+}
 #recommend ul{
     width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-flow: row nowrap; */
+    /* justify-content: space-between; */
+    perspective: 1000px;
 }
 #recommend ul li{
     width: 49%;
+    position: absolute
+}
+#recommend ul li:first-child{
+    transform: translate(250px);
+    z-index: 1;
+}
+#recommend ul li:nth-child(2){
+    transform: translate(600px) rotate3d(0,1,0,30deg);
 }
 #recommend ul li img{
     max-width: 100%;
+}
+#recommend div.left,#recommend div.right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    width: 79px;
+    height: 108px;
+    background: rgba(0,0,0,.05);
+}
+#recommend div.left:hover,#recommend div.right:hover{
+    background: #ccc;
+}
+#recommend div.right i.right-icon,#recommend div.left i.left-icon{
+    display: block;
+    background: url(../img/icon_sprite.png) 0px 220px; 
+    width: 22px;
+    height: 39px;
+    margin: 32px auto;
+
+}
+#recommend div.left{
+    top: 50%;
+    left: 0;
+}
+#recommend div.left i.left-icon{
+    background-position: -22px 220px;
 }
 /*recommend style*/
 /*new style*/
