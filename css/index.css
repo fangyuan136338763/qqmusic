@@ -191,15 +191,19 @@
     perspective: 1000px;
 }
 #recommend ul li{
-    width: 49%;
-    position: absolute
+    width: 40%;
+    position: absolute;
+    box-shadow: 5px 5px 10px 5px black;
 }
 #recommend ul li:first-child{
-    transform: translate(250px);
+    transform: translate(300px,20px);
     z-index: 1;
 }
 #recommend ul li:nth-child(2){
-    transform: translate(600px) rotate3d(0,1,0,30deg);
+    transform: translate(600px,-20px) rotate3d(0,1,0,30deg);
+}
+#recommend ul li:nth-child(3){
+    transform: rotate3d(0,1,0,-30deg) translateY(-20px);
 }
 #recommend ul li img{
     max-width: 100%;
@@ -267,4 +271,28 @@
 /*new style*/
 section .active{
     color: #31c27c;
+}
+/* login */
+#login{
+    width: 600px;
+    height: 435px;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -150px;
+    box-shadow: 1px 1px 3px 2px #ccc;
+}
+#login div.top{
+    text-align: center;
+    height: 56px;
+    line-height: 56px;
+}
+#login div.top span:last-child{
+    float: right;
+    margin: 10px 10px;
+}
+#login div.top span:first-child{
+    margin-right: 30px;
 }
