@@ -163,3 +163,4 @@ banner_list.onclick = function(e){
         }
     }
 })();
+
