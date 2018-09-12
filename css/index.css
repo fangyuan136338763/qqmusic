@@ -181,29 +181,42 @@
 #recommend{
     position:relative;
     height: 420px;
+    perspective: 1000px;
 }
-#recommend ul{
+#recommend div.carousel{
     width: 1200px;
     margin: 0 auto;
     /* display: flex; */
     /* flex-flow: row nowrap; */
     /* justify-content: space-between; */
-    perspective: 1000px;
 }
 #recommend ul li{
-    width: 40%;
+    width: 500px;
+    height: 280px;
     position: absolute;
     box-shadow: 5px 5px 10px 5px black;
+    transition: all 1s;
+    cursor: pointer;
 }
-#recommend ul li:first-child{
-    transform: translate(300px,20px);
-    z-index: 1;
+#recommend ul li.left2{
+    transform: translate3d(0,0,-70px) rotateY(30deg);
+    z-index: 7;
 }
-#recommend ul li:nth-child(2){
-    transform: translate(600px,-20px) rotate3d(0,1,0,30deg);
+#recommend ul li.left1{
+    transform: translate3d(200px,0,-70px) rotateY(40deg);
+    z-index: 8;
 }
-#recommend ul li:nth-child(3){
-    transform: rotate3d(0,1,0,-30deg) translateY(-20px);
+#recommend ul li.king{
+    transform: translate3d(350px,20px,0);
+    z-index: 9;
+}
+#recommend ul li.right1{
+    transform: translate3d(500px,0,-70px) rotateY(-40deg);
+    z-index: 8;
+}
+#recommend ul li.right2{
+    transform: translate3d(700px,0,-70px) rotateY(-30deg);
+    z-index: 7;
 }
 #recommend ul li img{
     max-width: 100%;
@@ -257,9 +270,15 @@
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 50px auto 40px;
+    perspective: 1000px;
 }
 #new ul.img li{
     width: 18%;
+    transition: all 1s;
+}
+#new ul.img li:hover{
+    transform: translateZ(20px);
+    box-shadow: 5px 5px 10px 10px black;
 }
 #new ul.img img{
     max-width: 100%;
