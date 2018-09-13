@@ -79,6 +79,7 @@
     height: 0px;
     overflow: hidden;
     transition: all 0.5s;
+    z-index: 99;
 }
 #header .position-absolute a{
     display: block;
@@ -137,6 +138,7 @@
     margin-top: -220px;
     box-shadow: 1px 1px 3px 2px #ccc;
     display: none;
+    z-index: 99;
 }
 #login div.top{
     text-align: center;

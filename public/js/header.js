@@ -1,16 +1,18 @@
-(function(){
-
-    var input = document.getElementsByClassName("input")[0];
-    var div = input.nextElementSibling;
+/* window.onload = function(){
+    var input = document.getElementById("input");
     input.onfocus = function () {
+        var div = input.nextElementSibling;
         div.style.height = "165px";
     }
     input.onblur = function () {
         div.style.height = "0";
     }
-})();
+} */
 
-(function(){
+    
+
+
+/* (function(){
     var btnLogin = document.getElementsByClassName("btn")[0].firstElementChild;
     var loginPage = document.getElementById("login");
     btnLogin.onclick = function(){
@@ -26,4 +28,4 @@
         console.log(close);
         loginPage.style.display = "none";
     }
-})();
+})(); */

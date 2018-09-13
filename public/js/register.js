@@ -17,3 +17,4 @@ user_reg.onclick = function(e){
     console.log(data);
     xhr.send(data);
 }
+
