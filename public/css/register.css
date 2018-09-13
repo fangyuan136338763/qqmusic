@@ -1,0 +1,127 @@
+#register{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#register .left{
+    width: 480px;
+    padding: 5px 30px;
+    padding: 3px;
+    background: url(../img/register/01-1.jpg);
+    height: 900px;
+}
+#register .left img{
+    vertical-align: bottom;
+}
+#register .left h1{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: normal;
+}
+#register .right{
+    width: 869px;
+}
+/* 右边顶部样式 */
+#register .right ul{
+    width: 60%;
+    float: right;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 40px 30px 30px 0;
+}
+#register .right a{
+    color: #000;
+}
+#register .right a.hy{
+    background: #f54444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 5px 2px 0;
+}
+#register .right img{
+    vertical-align: bottom;
+}
+#register .right img.email{
+    vertical-align: middle;
+}
+#register .right div.content{
+    width: 60%;
+    margin: 0 auto;
+    clear: both;
+}
+#register .right .content h1{
+    font-size: 50px;
+    margin: 50px 0 10px;
+    font-weight: normal;
+}
+#register .right .content h1+div{
+    margin: 20px 0 64px;
+}
+#register .right .content a{
+    float: right;
+    font-size: 25px;
+    color: #359eff;
+}
+#register .right .content a+p{
+    font-size: 30px;
+    line-height: 30px;
+    color: #333;
+}
+#register .right .content form input.input{
+    width: 100%;
+    height: 52px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: 1px solid #777;
+    font-size: 20px;
+    padding-left: 20px;
+}
+#register .right .phone{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+#register .right .phone input{
+    height: 52px;
+    border-radius: 4px;
+    border: 1px solid #777;
+    font-size: 20px;
+}
+#register .right .phone span{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999;
+}
+#register .right .phone input:first-child{
+    width: 28%;
+    padding-left: 20px;
+}
+#register .right .phone input+input{
+    width: 65%;
+    padding-left: 20px;
+}
+#register .right button{
+    display: block;
+    width: 100%;
+    height: 52px;
+    font-size: 24px;
+    color: #fff;
+    background-image: linear-gradient(0deg,#398bff,#3083ff);
+    border-radius: 4px;
+    border: 1px solid #3083ff;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#register .right button ~p{
+    margin-bottom: 10px;
+}
+#register .right button ~ p label{
+    color: #aaa;
+}
+#register .right form + p{
+    margin-top: 80px;
+    text-align: center;
+}
