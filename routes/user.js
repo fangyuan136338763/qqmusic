@@ -3,10 +3,13 @@ const router = express.Router();
 var pool = require('../pool.js');
 
 router.post('/register',(req,res)=>{
-    var $uname = req.body.uname;
-    var $upwd = req.body.upwd;
-    var $phone = req.body.phone;
-    console.log($uname,$upwd,$phone);
+    var sql = `INSERT INTO user set ?`;
+    pool.query(sql,req.body,(err,result)=>{
+        if(err){throw err}
+        if(result.affectedRows>0){
+            res.send("ok");
+        }
+    });
 })
 
 module.exports = router;

@@ -165,7 +165,7 @@ banner_list.onclick = function(e){
 })();
 
 // 导入头部
-$(function(){
+/* $(function(){
     var $link = $(`<link rel="stylesheet" href="css/header.css">`);
     $link.appendTo("head");
     $.ajax({
@@ -173,6 +173,15 @@ $(function(){
         type: "get",
         success: function(res){
             $(res).replaceAll("#header");
+        }
+    });
+    var $linkFoot = $(`<link rel="stylesheet" href="css/footer.css">`);
+    $linkFoot.appendTo("head");
+    $.ajax({
+        url: "footer.html",
+        type: "get",
+        success: function(res){
+            $(res).replaceAll("#footer");
         }
     });
 });
@@ -201,5 +210,5 @@ window.onload = function(){
         console.log(close);
         loginPage.style.display = "none";
     }
-};
+}; */
 

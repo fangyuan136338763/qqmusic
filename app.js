@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
 var user = require('./routes/user.js');
 var pool = require('./pool.js');
-app.listen(3000,function(){
+app.listen(5000,function(){
     console.log("服务器开启成功");
 });
 

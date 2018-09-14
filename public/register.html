@@ -45,19 +45,30 @@
                     <p>每一天，乐在沟通。</p>
                 </div>
                 <form>
-                    <input type="text" class="input" placeholder="昵称" name="uname">
-                    <input type="password" class="input" placeholder="密码" name="upwd">
-                    <p class="phone">
-                        <input type="text" value="+86">
-                        <input type="phone" name="phone">
-                        <span>可通过手机号找回密码</span>
-                    </p>
+                    <div>
+                        <img src="img/register/tick.png" alt="">
+                        <input type="text" class="input" placeholder="QQ" name="uname">
+                        <p> <img src="img/register/error.png"> 账号不能为空</p>
+                    </div>
+                    <div>
+                        <img src="img/register/tick.png" alt="">
+                        <input type="password" class="input" placeholder="密码" name="upwd">
+                        <p> <img src="img/register/error.png"> 密码不能为空</p>
+                    </div>
+                    <div>
+                        <p class="phone">
+                            <input type="text" value="+86">
+                            <input type="phone" name="phone" placeholder="手机号码">
+                            <span>可通过手机号找回密码</span>
+                            <img src="img/register/tick.png" alt="">
+                            <div><img src="img/register/error.png"> 手机号码格式不正确</div>
+                        </p>
                     <button id="user_reg">立即注册</button>
                     <p>
-                        <input type="checkbox" id="box1"><label for="box1">同时开通QQ空间</label>
+                        <input type="checkbox" id="box1" checked><label for="box1">同时开通QQ空间</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="box2"><label for="box2">我已阅读并同意相关条款和隐私政策</label>
+                        <input type="checkbox" id="box2" checked><label for="box2">我已阅读并同意相关条款和隐私政策</label>
                     </p>
                 </form>
                 <p>Copyright © 1998-2018Tencent All Rights Reserved</p>
