@@ -11,5 +11,18 @@ router.post('/register',(req,res)=>{
         }
     });
 })
+router.post('/login',(req,res)=>{
+    var sql = `select * from user where uname=? and upwd=?`;
+    var $uname = req.body.uname;
+    var $upwd = req.body.upwd;
+    console.log($uname,$upwd);
+    pool.query(sql,[$uname,$upwd],(err,result)=>{
+        if(err){throw err}
+        if(result){
+            console.log(result);
+            res.send("ok");
+        }
+    });
+});
 
 module.exports = router;

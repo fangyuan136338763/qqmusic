@@ -1,27 +1,7 @@
 var inputName = document.getElementsByName("uname")[0];
 var inputUpwd = document.getElementsByName("upwd")[0];
 var inputPhone = document.getElementsByName("phone")[0];
-user_reg.onclick = function(e){
-    e.preventDefault();
-    var uname = inputName.value;
-    var upwd = inputUpwd.value;
-    var phone = inputPhone.value;
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState == 4 && xhr.status == 200){
-            var result = xhr.responseText;
-            if(result == "ok"){
-                if(confirm("注册成功，是否跳转到主页?")){
-                    location.href = "http://localhost:5000/index.html";
-                }
-            }
-        }
-    }
-    xhr.open('post','/user/register',true);
-    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
-    var data = `uname=${uname}&upwd=${upwd}&phone=${phone}`;
-    xhr.send(data);
-}
+
 
 var regName = /^\d{5,11}$/;
 inputName.onblur = function(){
@@ -63,9 +43,31 @@ inputUpwd.onfocus = function(){
     inputUpwd.nextElementSibling.className = "";
 }
 
-inputPhone.onblur = function(){
-    var inputPhone = this;
-    var info = inputPhone.parentNode.lastElementChild;
-    var img = inputPhone.nextElementSibling.nextElementSibling;
-    console.log(info,img);
+
+user_reg.onclick = function(e){
+    e.preventDefault();
+    var uname = inputName.value;
+    var upwd = inputUpwd.value;
+    var phone = inputPhone.value;
+    var xhr = new XMLHttpRequest();
+    if(regName.test(uname)&&regUpwd.test(upwd)){
+
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4 && xhr.status == 200){
+                var result = xhr.responseText;
+                if(result == "ok"){
+                    if(confirm("注册成功，是否跳转到主页?")){
+                        location.href = "http://localhost:5000/index.html";
+                    }
+                }
+            }
+        }
+        xhr.open('post','/user/register',true);
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        var data = `uname=${uname}&upwd=${upwd}&phone=${phone}`;
+        xhr.send(data);
+    }else{
+        alert("信息不正确，无法注册");
+    }
 }
+

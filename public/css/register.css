@@ -94,15 +94,15 @@
 #register .right .content form div>img.success,#register .right .content form div p.phone>img.success{
     display: block; 
 }
-#register .right .content form input.input+p.error,#register .right .phone+p.error{
+#register .right .content form input.input+p.error,#register .right .phone div.error{
     font-size: 14px;
     color: #ff5b5b;
     height: 19px;
 }
-#register .right .content form input.input+p,#register .right .phone .info{
+#register .right .content form input.input+p,#register .right .phone div{
     font-size: 14px;
     color: #ff5b5b;
-    height: 0px;
+    height: 0;
     transition: all .2s;
     overflow: hidden;
 }
