@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>取消与利用冒泡</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<div id="keys">
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>4</button><br>
+			<button>C</button>
+			<button>+</button>
+			<button>-</button>
+			<button>=</button>
+		</div>
+		<textarea id="sc" style="resize:none;width:200px; height:50px;" readonly></textarea>
+    <script>
+			/* keys.onclick = function(e){
+				if(e.target.nodeName === "BUTTON"){
+					// alert(e.target.innerHTML);
+					console.log(e.target);
+					if(e.target.innerHTML == "C"){
+						sc.value = "";
+					}else if(e.target.innerHTML == "="){
+						try{
+							console.log(eval(sc.innerHTML));
+							sc.value = eval(sc.value);
+						}catch(err){
+							sc.value = err;
+						}
+					}else{
+						sc.value += e.target.innerHTML;
+					}
+				}
+			} */
+			keys.onclick = function(e){
+				var btn = e.target;
+				switch(btn.innerHTML){
+					case "C":
+						sc.value = "";
+						console.log(11);
+						break;
+					case "=":
+						sc.value = eval(sc.value);
+						console.log(222);
+						break;
+					default:
+						sc.value += btn.innerHTML;
+						console.log(33);
+				}
+			}
+		</script>
+	</body>
+</html>

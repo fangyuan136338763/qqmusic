@@ -18,9 +18,11 @@ router.post('/login',(req,res)=>{
     console.log($uname,$upwd);
     pool.query(sql,[$uname,$upwd],(err,result)=>{
         if(err){throw err}
-        if(result){
-            console.log(result);
-            res.send("ok");
+        // console.log(result);
+        if(result.length){
+            res.send(`http://localhost:5000/index?id=${result[0].id}`);
+        }else{
+            res.send("error");
         }
     });
 });

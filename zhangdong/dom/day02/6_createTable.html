@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>动态创建表格</title>
+<meta charset="utf-8" />
+<style>
+	table{width:600px; border-collapse:collapse;
+		text-align:center;
+	}
+	td,th{border:1px solid #ccc}
+</style>
+
+</head>
+<body>
+	<div id="data"></div>
+  <script>
+	var json=[
+    {"ename":"Tom", "salary":11000, "age":25},
+    {"ename":"John", "salary":13000, "age":28},
+    {"ename":"Mary", "salary":12000, "age":25}
+  ];
+  // 新建table
+  var table = document.createElement("table");
+  // 新建thead
+  var thead = document.createElement("thead");
+  // table中追加thead
+  table.appendChild(thead);
+  // 新建tr
+  var tr = document.createElement("tr");
+  // thead中追加tr
+  thead.appendChild(tr);
+  // 遍历员工对象，创建th
+  for(var key in json[0]){
+    var th = document.createElement("th");
+    tr.appendChild(th);
+    th.innerHTML = key;
+  }
+  var tbody = document.createElement("tbody");
+  table.appendChild(tbody);
+  for(var i=0;i<json.length;i++){
+    var tr = document.createElement("tr");
+    tbody.insertBefore(tr,tbody.children[0]);
+    for(var key in json[i]){
+      var td = document.createElement("td");
+      td.innerHTML = json[i][key];
+      tr.appendChild(td);
+    }
+  }
+
+  document.getElementById("data")
+          .appendChild(table);
+  </script>
+</body>
+</html>

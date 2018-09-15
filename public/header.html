@@ -1,13 +1,13 @@
     <header id="header">
         <!--left-->
         <div class="left">
-            <a href="#"><img src="img/logo.png"></a>
+            <a href="http://localhost:5000/index.html"><img src="img/logo.png"></a>
             <ul>
                 <li>
                     <a href="#"  class="active">音乐馆</a>
                 </li>
                 <li>
-                    <a href="#">我的音乐</a>
+                    <a href="http://localhost:5000/list.html">我的音乐</a>
                 </li>
                 <li>
                     <a href="#">客户端</a>
@@ -24,14 +24,15 @@
         <div class="right">
             <!-- search -->
             <div class="search">
-                <input type="text" placeholder="搜索音乐、MV、歌单、用户" class="input">
+                    <input type="text" placeholder="搜索音乐、MV、歌单、用户" class="input-search">
+                    <!-- <img src="img/register/search.png" alt=""> -->
                 <div class="position-absolute">
                     <ul>
-                        <li><a href="#"><span>1</span>&nbsp;&nbsp;去年夏天<i>30.9万</i></a></li>
-                        <li><a href="#"><span>2</span>&nbsp;&nbsp;一百万个可能<i>28.8万</i></a></li>
-                        <li><a href="#"><span>3</span>&nbsp;&nbsp;香蜜沉沉烬如霜<i>27.5万</i></a></li>
-                        <li><a href="#"><span>4</span>&nbsp;&nbsp;目不转睛<i>24.9万</i></a></li>
-                        <li><a href="#"><span>5</span>&nbsp;&nbsp;过敏<i>21.9万</i></a></li>
+                        <li><a href="http://localhost:5000/details.html"><span>1</span>&nbsp;&nbsp;去年夏天<i>30.9万</i></a></li>
+                        <li><a href="http://localhost:5000/details.html"><span>2</span>&nbsp;&nbsp;一百万个可能<i>28.8万</i></a></li>
+                        <li><a href="http://localhost:5000/details.html"><span>3</span>&nbsp;&nbsp;香蜜沉沉烬如霜<i>27.5万</i></a></li>
+                        <li><a href="http://localhost:5000/details.html"><span>4</span>&nbsp;&nbsp;目不转睛<i>24.9万</i></a></li>
+                        <li><a href="http://localhost:5000/details.html"><span>5</span>&nbsp;&nbsp;过敏<i>21.9万</i></a></li>
                     </ul>
                 </div>
             </div>
@@ -55,7 +56,7 @@
                 <p>推荐使用<a href="#">快速安全登录</a>，防止盗号。</p>
                 <input type="text" placeholder="支持QQ号/邮箱/手机号登录">
                 <input type="password" placeholder="密码">
-                <button>登录</button>
+                <button id="btn_login">登录</button>
             </div>
             <div class="bottom">
                 <input type="checkbox" checked>下次自动登录

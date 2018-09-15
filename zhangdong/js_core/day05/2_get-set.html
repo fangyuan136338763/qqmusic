@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var eric = {eid: 1001,ename:"埃里克",_age: 21}
+        Object.defineProperties(eric,{
+            _age:{
+                enumerable: false,
+                configurable: false
+            },
+            age:{
+                get:function(){
+                    return this._age;
+                },
+                set:function(val){
+                    if(val>=18 && val<=65){
+                        this._age = val;
+                    }else{
+                        throw new Error("年龄必须介于18-65之间");
+                    }
+                },
+                enumerable: true,
+                configurable: false
+            }
+        });
+        eric.age = 31;
+        console.log(eric.age);
+        console.log(eric);
+        // eric.age = 66;
+        // console.log(eric.age);
+        </script>
+</body>
+</html>

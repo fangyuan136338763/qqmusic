@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calc(base,bonus1,bonus2){
+            console.log(`${this.name}的总工资是：${base+bonus1+bonus2}`);
+        }
+        var lilei = {name: "Li Lei"};
+        var hmm = {name: "Han Meimei"};
+        calc.call(lilei,10000,2000,3000);
+        calc.call(hmm,5000,3000,5000);
+        var lcalc = calc.bind(lilei);
+        lcalc(10000,2000,5000);
+        // lcalc.call(hmm,5000,2000,1000);
+        </script>
+</body>
+</html>

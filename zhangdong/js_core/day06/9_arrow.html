@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">赞+0</button>
+    <script>
+        var i=0;
+        btn.onclick = function(){
+            this.innerHTML = `赞+${++i}`;
+        }
+        /* setInterval(function () {
+            console.log("心跳");
+        }, 1000) */
+        setInterval(()=>console.log("心跳"),1000);
+        var arr = [12, 3, 123, 1, 23, 2];
+        /* arr.sort(function (a, b) {
+            return a - b
+        }); */
+        console.log(arr);
+        arr.sort((a,b)=>a-b);
+
+        var str = "you can you up!"
+        /* str = str.replace(/\b[a-z]/g, function (kw) {
+            return kw.toUpperCase();
+        }); */
+        str = str.replace(/\b[a-z]/g,kw=>kw.toUpperCase());
+        console.log(str);
+
+        var nums = [1, 2, 3, 4, 5];
+        /* nums.forEach(function (val, i, arr) {
+            arr[i] = val * 2
+        }); */
+        nums.forEach((val,i,arr)=>arr[i]=val*2);
+        console.log(nums);
+
+        var arr2 = [1, 2, 3, 4, 5];
+        /* var evens = arr2.map(function (val) {
+            return val * 2;
+        }) */
+        var evens = arr2.map(val=>val*2);
+        console.log(arr2);
+        console.log(evens);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        function Emp(eid,ename,salary,age){
+            Object.defineProperties(this,{
+                eid:{
+                    value: eid,
+                    writable: false,
+                    enumerable: true
+                },
+                ename:{
+                    value: ename,
+                    writable: true,
+                    enumerable: true
+                },
+                salary:{
+                    value: salary,
+                    writable: true,
+                    enumerable: false
+                },
+                _age:{
+                    // value: age,
+                    writable: true,
+                    enumerable: false
+                }
+            });
+            this.age = age;
+            // 保护结构
+            // Object.preventExtensions(this);
+            Object.seal(this);
+        }
+        // emp.prototype.age={
+        Object.defineProperties(Emp.prototype,{
+            age:{
+                get: function(){
+                    return this._age;
+                },
+                set: function(value){
+                    if(value>=18 && value<=65){
+                        this._age = value;
+                    }else{
+                        throw new Error("年龄介于18-65之间");
+                    }
+                },
+                enumerable: false,
+                configurable: false
+            }
+        });    
+            
+        var eric = new Emp(1001,"埃里克",15000,30);
+        // eric.eid = 10003;
+        // delete eric.ename;
+        /* for(var key in eric){
+            console.log(`${key}:${eric[key]}`);
+        } */
+        // eric.age = 33;
+        // eric.Age = -5;
+        console.log(eric);
+        </script>
+</body>
+</html>
