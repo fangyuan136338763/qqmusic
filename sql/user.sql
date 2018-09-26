@@ -9,7 +9,7 @@ CREATE TABLE music_user(
     phone VARCHAR(16) NOT NULL
 );
 INSERT INTO music_user VALUES(1,10000,123456,"13666666666");
-
+-- 音乐分类
 CREATE TABLE music_family(
     fid INT PRIMARY KEY,
     family_name VARCHAR(16)
@@ -20,11 +20,15 @@ INSERT INTO music_family VALUES(30,"轻音乐");
 INSERT INTO music_family VALUES(40,"八音盒");
 INSERT INTO music_family VALUES(50,"情歌");
 INSERT INTO music_family VALUES(60,"网络歌曲");
+-- 音乐分类
+-- 推荐列表
 CREATE TABLE commend_list(
     cid INT PRIMARY KEY AUTO_INCREMENT,
     details VARCHAR(32),
     play_counts VARCHAR(16),
-    pic VARCHAR(32),
+    src VARCHAR(32),
     family_id INT,
     FOREIGN KEY (family_id) REFERENCES music_family(fid)
 );
+INSERT INTO commend_list VALUES(null,'每日新歌：Zedd混音单曲颠覆原作','3.1万',"img/T002R300x300M00000366UYc2LOS6Q.jpg",10);
+-- 推荐列表
