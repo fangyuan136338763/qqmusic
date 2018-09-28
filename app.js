@@ -1,11 +1,12 @@
 const express = require("express");
-const app = express();
 const bodyParser = require("body-parser");
-
 var user = require('./routes/user.js');
-var pool = require('./pool.js');
+var index = require('./routes/index.js');
+
+
+var app = express();
 app.listen(5000,function(){
-    console.log("服务器开启成功");
+    console.log("bug模式");
 });
 
 app.use(express.static('public'));
@@ -13,3 +14,4 @@ app.use(bodyParser.urlencoded({
     extended:false
 }));
 app.use('/user',user);
+app.use('/index',index);
