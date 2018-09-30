@@ -155,13 +155,22 @@ window.onload = function(){
         }
     })();
     // 立体轮播
+    // 请求后台数据
     $.ajax({
         url: "http://localhost:5000/index",
         type: "get",
-        dataType: "json"
-    }).then(function(result){
-        console.log(result);
-    });
+        dataType: "json",
+        success:function(result){
+            var arr = result;
+            console.log(arr);
+            var arrNew = [];
+            for(var i=0;i<6;i++){
+                arrNew.push(arr.slice(i*15,(i+1)*15));
+            }
+            var html = ``;
+        }
+    })
+    // 请求后台数据
 }
 
 

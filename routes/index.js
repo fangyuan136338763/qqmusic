@@ -3,7 +3,7 @@ var router = express.Router();
 var pool = require('../pool.js');
 
 router.get('/',(req,res)=>{
-    var sql = "SELECT `cid`, `details`, `play_counts`, `src`, `family_id` FROM `commend_list` WHERE family_id=10 LIMIT 0,15";
+    var sql = "SELECT b.`family_id` , b.`cid`, b.`play_counts`,b.`src`  FROM `commend_list` b WHERE	b.family_id IN (10,20,30,40,50,60) GROUP BY CONCAT (b.`family_id`, b.`cid` % 15)";
     pool.query(sql,[],(err,result)=>{
         if(err){throw err};
         res.send(result);
@@ -11,3 +11,6 @@ router.get('/',(req,res)=>{
 });
 
 module.exports = router;
+
+
+
