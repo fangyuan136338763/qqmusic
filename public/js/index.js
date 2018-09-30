@@ -167,7 +167,89 @@ window.onload = function(){
             for(var i=0;i<6;i++){
                 arrNew.push(arr.slice(i*15,(i+1)*15));
             }
-            var html = ``;
+            var html = `<div class="sibling-float-item" id="content1">
+            <ul class="pic" id="pic">
+                <li>
+                    <a href="#" class="img"><img src="img/T002R300x300M000004EdHNN3Ds1fu.jpg"></a>
+                    <p><a href="#">每日新歌：粉墨爆款神曲日语版上线</a></p>
+                    <p>播放量：9264</p>
+                </li>
+                <li>
+                    <a href="#" class="img"><img src="img/T002R300x300M000001g2Ssu3cnmWc.jpg"></a>
+                    <p><a href="#">明日之子 | 听他们唱歌，就像掉进爱情海里</a></p>
+                    <p>播放量：1845</p>
+                </li>
+                <li><a href="#" class="img">
+                    <img src="img/T002R300x300M000001TWWxR1Rnoaf.jpg"></a>
+                    <p><a href="#">Alan Walker：只有一首神曲怎么够</a></p>
+                    <p>播放量：59.4万</p>
+                </li>
+                <li>
+                    <a href="#" class="img"><img src="img/T002R300x300M000002lV8lv0UIg0o.jpg"></a>
+                    <p><a href="#">老板催稿？你需要这些轻柔华语</a></p>
+                    <p>播放量：5.0万</p>
+                </li>
+                <li>
+                    <a href="#" class="img"><img src="img/T002R300x300M0000004YHhs0ozFTo.jpg"></a>
+                    <p><a href="#">韩式撩人 · 质感电子女嗓</a></p>
+                    <p>播放量：3.9万</p>
+                </li>
+            </ul>
+            <ul class="pic" id="pic">
+                    <li>
+                        <a href="#" class="img"><img src="img/T002R300x300M000004NbQXw2r39oQ.jpg"></a>
+                        <p><a href="#">每日新歌：粉墨爆款神曲日语版上线</a></p>
+                        <p>播放量：9264</p>
+                    </li>
+                    <li>
+                        <a href="#" class="img"><img src="img/T002R300x300M000004TEKRm2uPJSa.jpg"></a>
+                        <p><a href="#">明日之子 | 听他们唱歌，就像掉进爱情海里</a></p>
+                        <p>播放量：1845</p>
+                    </li>
+                    <li><a href="#" class="img">
+                        <img src="img/T002R300x300M0000009afwy0LlQxs.jpg"></a>
+                        <p><a href="#">Alan Walker：只有一首神曲怎么够</a></p>
+                        <p>播放量：59.4万</p>
+                    </li>
+                    <li>
+                        <a href="#" class="img"><img src="img/T002R300x300M0000028aDJ40OtTwA.jpg"></a>
+                        <p><a href="#">老板催稿？你需要这些轻柔华语</a></p>
+                        <p>播放量：5.0万</p>
+                    </li>
+                    <li>
+                        <a href="#" class="img"><img src="img/T002R300x300M0000041Vxpf3EVnYE.jpg"></a>
+                        <p><a href="#">韩式撩人 · 质感电子女嗓</a></p>
+                        <p>播放量：3.9万</p>
+                    </li>
+            </ul>
+            <ul class="pic" id="pic">
+                        <li>
+                            <a href="#" class="img"><img src="img/T002R300x300M000004EdHNN3Ds1fu.jpg"></a>
+                            <p><a href="#">每日新歌：粉墨爆款神曲日语版上线</a></p>
+                            <p>播放量：9264</p>
+                        </li>
+                        <li>
+                            <a href="#" class="img"><img src="img/T002R300x300M000001g2Ssu3cnmWc.jpg"></a>
+                            <p><a href="#">明日之子 | 听他们唱歌，就像掉进爱情海里</a></p>
+                            <p>播放量：1845</p>
+                        </li>
+                        <li><a href="#" class="img">
+                            <img src="img/T002R300x300M000001TWWxR1Rnoaf.jpg"></a>
+                            <p><a href="#">Alan Walker：只有一首神曲怎么够</a></p>
+                            <p>播放量：59.4万</p>
+                        </li>
+                        <li>
+                            <a href="#" class="img"><img src="img/T002R300x300M000002lV8lv0UIg0o.jpg"></a>
+                            <p><a href="#">老板催稿？你需要这些轻柔华语</a></p>
+                            <p>播放量：5.0万</p>
+                        </li>
+                        <li>
+                            <a href="#" class="img"><img src="img/T002R300x300M0000004YHhs0ozFTo.jpg"></a>
+                            <p><a href="#">韩式撩人 · 质感电子女嗓</a></p>
+                            <p>播放量：3.9万</p>
+                        </li>
+            </ul>
+        </div>`;
         }
     })
     // 请求后台数据
