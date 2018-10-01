@@ -198,3 +198,10 @@ INSERT INTO commend_list VALUES(null,'每日新歌：Zedd混音单曲颠覆原�
 INSERT INTO commend_list VALUES(null,'每日新歌：Zedd混音单曲颠覆原作','3.1万',"img/T002R300x300M0000043j7nD0s5HCY.jpg",60);
 INSERT INTO commend_list VALUES(null,'每日新歌：Zedd混音单曲颠覆原作','3.1万',"img/T002R300x300M000001ny30V3PzBXh.jpg",60);
 -- 推荐列表
+
+-- 音乐列表
+CREATE TABLE music_list(
+    mid INT PRIMARY KEY AUTO_INCREMENT,
+    mname VARCHAR(32),
+);
+-- 音乐列表
