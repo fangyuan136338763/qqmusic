@@ -3,7 +3,7 @@ const router = express.Router();
 var pool = require('../pool.js');
 
 router.post('/register',(req,res)=>{
-    var sql = `INSERT INTO user set ?`;
+    var sql = `INSERT INTO music_user set ?`;
     pool.query(sql,req.body,(err,result)=>{
         if(err){throw err}
         if(result.affectedRows>0){
@@ -12,7 +12,7 @@ router.post('/register',(req,res)=>{
     });
 })
 router.post('/login',(req,res)=>{
-    var sql = `select * from user where uname=? and upwd=?`;
+    var sql = `select * from music_user where uname=? and upwd=?`;
     var $uname = req.body.uname;
     var $upwd = req.body.upwd;
     console.log($uname,$upwd);

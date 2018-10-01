@@ -26,7 +26,7 @@ CREATE TABLE commend_list(
     cid INT PRIMARY KEY AUTO_INCREMENT,
     details VARCHAR(32),
     play_counts VARCHAR(16),
-    src VARCHAR(32),
+    src VARCHAR(64),
     family_id INT,
     FOREIGN KEY (family_id) REFERENCES music_family(fid)
 );
