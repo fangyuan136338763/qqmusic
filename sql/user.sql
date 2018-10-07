@@ -203,5 +203,13 @@ INSERT INTO commend_list VALUES(null,'每日新歌：Zedd混音单曲颠覆原�
 CREATE TABLE music_list(
     mid INT PRIMARY KEY AUTO_INCREMENT,
     mname VARCHAR(32),
+    msinger VARCHAR(32),
+    mfamily VARCHAR(32),
+    mdurtime VARCHAR(16),
+    mliupai VARCHAR(16),
+    mlanguage VARCHAR(16),
+    mcompany VARCHAR(32)
+
+
 );
 -- 音乐列表
