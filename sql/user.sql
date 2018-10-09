@@ -208,8 +208,11 @@ CREATE TABLE music_list(
     mdurtime VARCHAR(16),
     mliupai VARCHAR(16),
     mlanguage VARCHAR(16),
-    mcompany VARCHAR(32)
+    mcompany VARCHAR(32),
+    mtime DATE,
+    
 
 
 );
 -- 音乐列表
+INSERT INTO music_list VALUES(NULL,'不灭火 (Live)','吴亦凡 / 潘玮柏 / G.E.M. 邓紫棋 / 张震岳','中国新说唱 第13期','05:52','Rap/Hip Hop','国语','剧星传媒');
